@@ -7,18 +7,19 @@ overview_ui <- function(id) {
       h2("Customer Overview & Segmentation"),
       p("This module will present customer structure, demographic patterns, acquisition channels, and product adoption.")
     ),
-    
     fluidRow(
       column(
         width = 3,
-        wellPanel(
+        div(
+          class = "control-card",
           h4("Inputs"),
-          p("Placeholder for filters such as segment, age group, location, and product type.")
+          p("Placeholder for filters such as customer segment, age group, location, and product type.")
         )
       ),
       column(
         width = 9,
-        wellPanel(
+        div(
+          class = "output-card",
           h4("Outputs"),
           p("Placeholder for overview charts, KPIs, and segment comparison visualisations.")
         )
