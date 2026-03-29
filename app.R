@@ -43,6 +43,11 @@ ui <- navbarPage(
         margin-bottom: 0.5rem;
       }
 
+      .app-hero p {
+        margin-bottom: 0;
+        color: rgba(255, 255, 255, 0.92);
+      }
+
       .module-card {
         background: white;
         border-radius: 12px;
@@ -77,6 +82,32 @@ ui <- navbarPage(
         border: 1px solid #e5e7eb;
         min-height: 180px;
       }
+
+      .kpi-card {
+        background: #fff;
+        border-radius: 12px;
+        padding: 12px 14px;
+        text-align: center;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+        border-top: 3px solid #10b981;
+        margin-bottom: 10px;
+      }
+
+      .kpi-val {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: #0f172a;
+      }
+
+      .kpi-lbl {
+        font-size: 0.78rem;
+        color: #64748b;
+        margin-top: 4px;
+      }
+
+      .tab-content {
+        padding-top: 0.5rem;
+      }
     "))
   ),
   
@@ -86,7 +117,7 @@ ui <- navbarPage(
       div(
         class = "app-hero",
         h1("Colombian Fintech Customer Analytics"),
-        p("Interactive visual analytics for customer structure, engagement, and retention.")
+        p("Start by understanding who the customers are, how they are segmented, and which products they adopt across the platform.")
       ),
       overview_ui("overview")
     )
@@ -98,7 +129,7 @@ ui <- navbarPage(
       div(
         class = "app-hero",
         h1("Customer Engagement & Experience"),
-        p("Explore platform usage, satisfaction, feedback, and service issues.")
+        p("Explore how customers use the platform, how satisfied they are, and what complaints or support patterns shape the customer experience.")
       ),
       engagement_ui("engagement")
     )
@@ -110,7 +141,7 @@ ui <- navbarPage(
       div(
         class = "app-hero",
         h1("Retention Risk & Customer Value"),
-        p("Identify high-risk and high-value customer groups using behavioural and business metrics.")
+        p("Identify high-risk and high-value customer groups by linking customer value, transaction behaviour, and potential churn signals.")
       ),
       retention_ui("retention")
     )
