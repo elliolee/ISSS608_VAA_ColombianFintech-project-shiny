@@ -20,17 +20,27 @@ It supports three key analytical modules:
 ---
 
 ## 🧱 Project Structure
+
+```text
 .
-├── app.R                  # Main app entry point
-├── global.R               # Global setup (data + libraries)
-├── modules/               # Modular UI + server logic
+├── app.R
+├── global.R
+├── modules/
+│   ├── module_overview.R
+│   ├── module_engagement.R
+│   └── module_retention.R
 ├── scripts/
-│   └── 01_data_cleaning.R # Data preprocessing pipeline
-├── data_raw/              # Raw dataset (not tracked in git ideally)
-├── data_clean/            # Cleaned dataset used by app
-├── www/                   # CSS / assets
-├── rsconnect/             # Deployment config (auto-generated)
+│   └── 01_data_cleaning.R
+├── data_raw/
+│   └── customer_data.csv
+├── data_clean/
+│   └── customer_data_cleaned.csv
+├── www/
+│   └── .gitkeep
+├── rsconnect/
+│   └── shinyapps.io/
 ├── .gitignore
+└── ISSS608_VAA_ColombianFintech-project-shiny.Rproj
 
 ---
 
@@ -52,4 +62,5 @@ rsconnect::deployApp()
 	•	Website = presentation + navigation
 	•	Shiny App = interactive analytics engine
 
-Users access the app directly from the website：https://elliolee.github.io/ISSS608_VAA_ColombianFintech-project-website/
+Users access the app directly from the website：
+https://elliolee.github.io/ISSS608_VAA_ColombianFintech-project-website/
