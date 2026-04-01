@@ -1,0 +1,10 @@
+name: isss608_vaa_colombianfintech-project-shiny
+title:
+username: ligen
+account: ligen
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 16969075
+bundleId: 11777382
+url: https://ligen.shinyapps.io/isss608_vaa_colombianfintech-project-shiny/
+version: 1
