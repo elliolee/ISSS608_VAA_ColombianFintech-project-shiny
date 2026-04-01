@@ -41,7 +41,7 @@ It supports three key analytical modules:
 │   └── shinyapps.io/
 ├── .gitignore
 └── ISSS608_VAA_ColombianFintech-project-shiny.Rproj
-
+```
 ---
 
 ## 🔄 Data Workflow
